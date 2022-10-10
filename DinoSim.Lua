@@ -108,3 +108,4 @@ end)
 end
 tp(274.477, 90.0895, -690.018); -- Change x,y,z to the coordinates you got
 end)
+ArgetnarLib:Notify("Script", "The script has been loaded")
