@@ -76,6 +76,13 @@ end)
 TabMisc:Button("Destroy", function()
     game.CoreGui.MangoHub:Destroy()
 end)
+TabMisc:Button("Rejoin", function()
+local ts = game:GetService("TeleportService")
+
+local p = game:GetService("Players").LocalPlayer
+
+ts:TeleportToPlaceInstance(game.PlaceId, game.JobId, p)
+end)
 TabMisc:Button("Tp Mecha Dino", function()
     local plr = game:service"Players".LocalPlayer;
 local tween_s = game:service"TweenService";
